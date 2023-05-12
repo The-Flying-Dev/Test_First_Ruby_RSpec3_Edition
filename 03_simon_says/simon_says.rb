@@ -38,7 +38,7 @@ def titleize(str)
 
 
     str_array.each do |word|                         
-        if word.length > 4
+        if (word.length > 4) || (word == str_array[-1]) # accounts for strings at last index
             titleize_array << word.capitalize 
             #puts titleize_array 
         else 
